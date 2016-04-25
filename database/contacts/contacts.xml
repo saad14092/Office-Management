@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<contacts>
+	<contact id="C001">
+		<property name="firstname" value="Saad" />
+		<property name="lastname" value="Moumen" />
+		<property name="title" value="Mr" />
+		<property name="cell" value="+212-660-294-596" />
+		<property name="home" value="+212-535-568-945" />
+		<property name="email" value="saad14092@gmail.com" />
+		<property name="url" value="https://www.linkedin.com/in/saadmoumen" />
+		<property name="adr" value="31 Zarktouni Avenue Sefrou 31000" />
+		<property name="bday" value="1994-06-08" />
+	</contact>
+</contacts>
