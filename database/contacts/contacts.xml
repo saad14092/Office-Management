@@ -1,14 +1,37 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <contacts>
-	<contact id="C001">
-		<property name="firstname" value="Saad" />
-		<property name="lastname" value="Moumen" />
-		<property name="title" value="Mr" />
-		<property name="cell" value="+212-660-294-596" />
-		<property name="home" value="+212-535-568-945" />
-		<property name="email" value="saad14092@gmail.com" />
-		<property name="url" value="https://www.linkedin.com/in/saadmoumen" />
-		<property name="adr" value="31 Zarktouni Avenue Sefrou 31000" />
-		<property name="bday" value="1994-06-08" />
+	<contact id="C01">
+		<property name="firstname" value="Saad"/>
+		<property name="lastname" value="Moumen"/>
+		<property name="title" value="Mr"/>
+		<property name="cell" value="+212 660 29 45 96"/>
+		<property name="home" value="05 35 56 89 45"/>
+		<property name="iemail" value="saad14092@gmail.com"/>
+		<property name="url" value="https://www.linkedin.com/in/saadmoumen"/>
+		<property name="hadr" value="31 Zarktouni Avenue Sefrou 31000"/>
+		<property name="bday" value="1994-06-08"/>
 	</contact>
+	<contact id="C02">
+		<property name="firstname" value="John"/>
+		<property name="lastname" value="DOE"/>
+		<property name="title" value="Mr"/>
+		<property name="url" value=""/>
+		<property name="bday" value="1992-5-12"/>
+	</contact>
+	<contact id="C03">
+		<property name="firstname" value="John"/>
+		<property name="lastname" value="Doe"/>
+		<property name="title" value="Mr"/>
+		<property name="cell" value=" 06 01 04 90 02"/>
+		<property name="fax" value="+33 535 16 18 57"/>
+		<property name="iemail" value="doe.john@mymail.com"/>
+		<property name="wemail" value="doe.john75@corps.com"/>
+		<property name="url" value=""/>
+		<property name="wadr" value="21 av des FARs Fes 30000"/>
+		<property name="hadr" value="54 quartier Rfaif Sefrou 31000"/>
+		<property name="bday" value="1984-10-15"/>
+		<property name="org" value=""/>
+		<property name="note" value=""/>
+	</contact>
+
 </contacts>

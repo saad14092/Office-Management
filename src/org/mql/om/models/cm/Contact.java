@@ -1,14 +1,17 @@
 package org.mql.om.models.cm;
 
+import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.List;
+
+import sun.util.calendar.Gregorian;
 
 public class Contact {
 	private String id;
 	private String title;
 	private String fname;
 	private String lname;
-	private GregorianCalendar bdate;
+	private Date bdate;
 	private List<Phone> phones;
 	private List<Address> addresses;
 	private List<Email> emails;
@@ -59,11 +62,11 @@ public class Contact {
 		this.lname = lname;
 	}
 
-	public GregorianCalendar getBdate() {
+	public Date getBdate() {
 		return bdate;
 	}
 
-	public void setBdate(GregorianCalendar bdate) {
+	public void setBdate(Date bdate) {
 		this.bdate = bdate;
 	}
 

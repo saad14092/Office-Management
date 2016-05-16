@@ -1,7 +1,8 @@
 package org.mql.om.models.cm;
 
+import java.util.StringTokenizer;
+
 public class Phone {
-	private String id;
 	private String countryCode;
 	private String phoneNumber;
 	private String type;
@@ -16,14 +17,25 @@ public class Phone {
 		this.phoneNumber = phoneNumber;
 		this.type = type;
 	}
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
-	}
+	
+	public Phone(String source) {
+		StringTokenizer st = new StringTokenizer(source, " ");
+		if (source.startsWith("+") || source.startsWith("00")) {
+			String originalCountryCode = st.nextToken();
+			if(originalCountryCode.startsWith("00")) {
+				countryCode = originalCountryCode.replace("00", "+");
+			}
+			else {
+				countryCode = originalCountryCode;
+			}
+			phoneNumber = source.substring(originalCountryCode.length() + 1);
+			
+		}
+		else {
+			countryCode = "";
+			phoneNumber = source;
+		}
+	}	
 
 	public String getCountryCode() {
 		return countryCode;
@@ -50,8 +62,21 @@ public class Phone {
 	}
 
 	public String toString() {
-		return "Phone [id=" + id + ", countryCode=" + countryCode + ", phoneNumber=" + phoneNumber + ", type=" + type
+		return "Phone [countryCode=" + countryCode + ", phoneNumber=" + phoneNumber + ", type=" + type
 				+ "]";
+	}
+	
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj instanceof Phone) {
+			Phone p = (Phone) obj;
+			if (countryCode.equals(p.getCountryCode()) && phoneNumber.equals(p.getPhoneNumber())) {
+				return true;
+			}
+		}
+		return false;
 	}
 	
 	

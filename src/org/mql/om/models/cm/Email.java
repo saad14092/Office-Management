@@ -1,7 +1,6 @@
 package org.mql.om.models.cm;
 
 public class Email {
-	private String id;
 	private String email;
 	private String type;
 	
@@ -9,20 +8,12 @@ public class Email {
 
 	}
 
-	public Email(String email, String type) {
+	public Email(String email) {
 		super();
 		this.email = email;
-		this.type = type;
+		type = "iemail";
 	}
-
-	public String getId() {
-		return id;
-	}
-
-	public void setId(String id) {
-		this.id = id;
-	}
-
+	
 	public String getEmail() {
 		return email;
 	}
@@ -40,7 +31,7 @@ public class Email {
 	}
 
 	public String toString() {
-		return "Email [id=" + id + ", " + email + ", type=" + type + "]";
+		return "Email [" + email + ", type=" + type + "]";
 	}
 	
 	
